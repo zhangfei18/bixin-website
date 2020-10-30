@@ -28,16 +28,22 @@ export default {
     "WAvwLxLWobYoYdOqCb": "Strategic Partners",
     "tfPyHNokAJtCYKgcozL": "Help Center",
     "yDwrgFUlTFRlitOj": "USDS",
-    "RzOVPoRrTjSYWFtO": "download byTestFlight",
-    "pKOdFitMVJGVzzIfGiz": "IPA",
+    "RzOVPoRrTjSYWFtT": "GET IT ON",
+    "RzOVPoRrTjSYWFtB": "TestFlight",
+    "pKOdFitMVJGVzzIfGiz": "Download IPA",//xg
     "WzGaOkvdGsJtwqJwKD": "@/assets/trading1-en.png",
     "wRuCmNUpueMDpnfUFa": "@/assets/trading2-en.png",
     "VGcPQPvwKsUFxUBy": "@/assets/trading3-en.png",
     "KCWoeZxEfVmJvdpUoUMP": "@/assets/financial1-en.png",
     "pZYxaJOpcGQkJRLAmsY": "@/assets/financial2-en.png",
-    "iJjvStYOJpQOeHnRw": "Anytime, anywhere, transfer to your friends worldwide",
+    "iJjvStYOJpQOeHnRw": "Anytime, anywhere,  transfer to your friends worldwide",
     "PcIuDXpndNOamvsZ": "Download Bixin App",
     "YRCWxjkxFZunwDgbM": "Download In Android",
-    "ltfbVWEKkuCnuTYxnLBK": "",
-    "YScehndIcMSfzbHQBP": ""
+    "YRCWxjkxFZunwDgAZ": "Download In iOS",
+    "YRCWxjkxFZunwhhhz": "Official APK",
+    "YRCWxjkxFZunwhgoO": "GooglePlay Store Version",
+    // 下载页的翻译
+    "ltfbVWEKkuCnuTYxnLBK": "Download APK",
+    "RzOVPoRrTjSYWFLT": "download byTestFlight",
+    "pKOdFitMVJGVzzIfGLz": "Download IPA",//xg
 }

@@ -11,7 +11,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #1f1f25;
+  // background-color: #1f1f25;
+  
 }
 body{
   margin: 0;

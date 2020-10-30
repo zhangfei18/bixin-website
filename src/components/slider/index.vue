@@ -8,15 +8,13 @@
       @touchend="end"
     >
       <!-- 内容区域 -->
-      <slot>
-        
-      </slot>
+      <slot> </slot>
     </div>
   </div>
 </template>
 
 <script>
-import { getClient, LIMIT_TIME, LIMIT_DISTANCE } from "./utils";
+import { getClient, START_EVENT, MOVE_EVENT, END_EVENT } from "./utils";
 export default {
   data() {
     return {
@@ -55,10 +53,21 @@ export default {
   computed: {},
   mounted() {
     this.init();
+    // this.bindEvent();
   },
   methods: {
+    bindEvent() {
+      const el = document.querySelector(".slide-item-box");
+      el.addEventListener(START_EVENT, this.start);
+      el.addEventListener(MOVE_EVENT, this.move);
+      el.addEventListener(END_EVENT, this.end);
+    },
     init() {
+      let isPc = !("ontouchstart" in window);
       let w = document.documentElement.clientWidth || document.body.clientWidth;
+      if (isPc && w <= 1425) {
+        w = 1425;
+      }
       this.bW = this.slideData.length * w;
       this.boxStyle.width = this.slideData.length * w + "px";
       this.iW = w;
@@ -69,12 +78,14 @@ export default {
       this.maxIndex = this.slideData.length - 1;
     },
     start(e) {
+      // console.log("down");
       this.startX = getClient(e).x;
       this.startL = this.startX;
       this.boxStyle.transitionDuration = "0ms";
       this.boxStyle.transitionProperty = "none";
     },
     move(e) {
+      // console.log("move", e);
       // e.stopPropagation();
       // e.preventDefault();
       this.disX = getClient(e).x - this.startX;
@@ -86,7 +97,6 @@ export default {
       } else {
         this.transX += this.disX;
       }
-
       this.boxStyle.transform = `translate3d(${this.transX}px, 0px, 0px)`;
     },
     end(e) {
@@ -147,7 +157,6 @@ export default {
     justify-content: flex-start;
     align-items: center;
     transition-timing-function: cubic-bezier(0.23, 1, 0.68, 1);
-   
   }
 }
 </style>

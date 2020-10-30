@@ -1,0 +1,118 @@
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+tr,
+th,
+td {
+    font-weight: normal;
+}
+
+video:focus,
+audio:focus {
+    outline: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    /* 解决鼠标拖拽图片 */
+    -webkit-user-drag: none;
+}
+
+a {
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+input:hover,
+input:focus,
+button,
+button:active,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    min-width: max-content;
+    min-width: -webkit-max-content;
+    font-family: PingFangSC-Regular;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+
+/*  */
